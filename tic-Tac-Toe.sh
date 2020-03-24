@@ -34,6 +34,20 @@ function assignSymbol()
 		echo "O"
 	fi
 }
-player=$( assignSymbol )
-echo $player
 
+#Store AssignSymbol Function In A New Variable
+playerSymbol=$( assignSymbol )
+
+#Function For Whoes Play First 
+function toss() {
+state=$((RANDOM%2))
+   if [[ $state -eq 1 ]]
+    then
+      echo "First Chance Of Player"
+    else
+      echo "First Chance Of Computer"
+   fi
+}
+
+chance=$( toss )
+echo $chance
