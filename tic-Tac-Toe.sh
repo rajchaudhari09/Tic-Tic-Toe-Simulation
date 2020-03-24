@@ -3,7 +3,7 @@
 #As a Tic Tac Toe Player would like to challenge computer
 
 echo "===================================================================="
-echo "==============: WELCOME TO THE SNACK LADDER GAME :=================="
+echo "==============: WELCOME TO THE TIC-TAC-TOE GAME :=================="
 echo "===================================================================="
 
 function printBoard() {
