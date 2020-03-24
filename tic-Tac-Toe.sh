@@ -21,7 +21,6 @@ function printBoard() {
 		echo "====================="
 		echo "====================="
 }
-printBoard
 
 #Player Assigned To The Symbol X or Y
 function assignSymbol()
@@ -51,3 +50,5 @@ state=$((RANDOM%2))
 
 chance=$( toss )
 echo $chance
+#Calling The Lastly Print Board Function Because The Player Of Play On Gameboard
+printBoard
