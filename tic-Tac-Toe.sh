@@ -6,6 +6,7 @@ echo "===================================================================="
 echo "==============: WELCOME TO THE TIC-TAC-TOE GAME :=================="
 echo "===================================================================="
 
+#Function For Printing The Gameboard 
 function printBoard() {
 	for (( i=0; i<3; i++ ))
 	 do
@@ -22,5 +23,17 @@ function printBoard() {
 }
 printBoard
 
-
+#Player Assigned To The Symbol X or Y
+function assignSymbol()
+{
+ state=$((RANDOM%2))
+	if (( $state == 1 ))
+	 then
+		echo "X"
+	 else
+		echo "O"
+	fi
+}
+player=$( assignSymbol )
+echo $player
 
