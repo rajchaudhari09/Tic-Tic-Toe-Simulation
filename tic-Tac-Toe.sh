@@ -21,3 +21,6 @@ function printBoard() {
 		echo "====================="
 }
 printBoard
+
+
+
