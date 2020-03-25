@@ -372,20 +372,34 @@ then
 	return
 fi
 #---------------------------------------------------------------------------------------------------------------
-k=0
-if [[ $k == "0" ]]
-then
-	computerPosition=$((RANDOM%9))
-	newRowIndex=$(($computerPosition / 3))
-	newColumnIndex=$(($computerPosition % 3))
-	if [[ ${Board[$newRowIndex,$newColumnIndex]} == "X" || ${Board[$newRowIndex,$newColumnIndex]} == "O" ]]
-	then
-		computerPlaying
-	else
-		Board[$newRowIndex,$newColumnIndex]=$playerSymbol
-	fi
-	k=1
-fi
+#k=0
+#if [[ $k == "0" ]]
+#then
+#	computerPosition=$((RANDOM%9))
+#	newRowIndex=$(($computerPosition / 3))
+#	newColumnIndex=$(($computerPosition % 3))
+#	if [[ ${Board[$newRowIndex,$newColumnIndex]} == "X" || ${Board[$newRowIndex,$newColumnIndex]} == "O" ]]
+#	then
+#		computerPlaying
+#	else
+#		Board[$newRowIndex,$newColumnIndex]=$playerSymbol
+#	fi
+#	k=1
+#fi
+#---------------------------------------------------------------------------------------------------------------
+#Condition For Sides Are Block
+for ((i=0; i<row; i++))
+do
+	for ((j=0; j<column; j++))
+       	do
+         	if [[ ${Board[$i,$j]} == "1" || ${Board[$i,$j]} == "3" || ${Board[$i,$j]} == "5" || ${Board[$i,$j]} == "7" ]]
+          	then
+            		Board[$i,$j]=$playerSymbol
+            		return
+         	fi
+       	done
+done
+
 }
 
 #Function For The Putting Position To User Side
