@@ -146,173 +146,239 @@ function computerPlaying()
 	if [[ ${Board[0,0]} == "$prevSymbol" && ${Board[0,1]} == "$prevSymbol" && ${Board[0,2]} == "2" ]]
     	then
       		Board[0,2]=$playerSymbol
+		return
     	elif [[ ${Board[0,1]} == "$prevSymbol" && ${Board[0,2]} == "$prevSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
     	elif [[ ${Board[0,0]} == "$prevSymbol" && ${Board[0,2]} == "$prevSymbol" && ${Board[0,1]} == "1" ]]
    	then
       		Board[0,1]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[1,0]} == "$prevSymbol" && ${Board[1,1]} == "$prevSymbol" && ${Board[1,2]} == "5" ]]
     	then
       		Board[1,2]=$playerSymbol
+		return
     	elif [[ ${Board[1,1]} == "$prevSymbol" && ${Board[1,2]} == "$prevSymbol" && ${Board[1,0]} == "3" ]]
     	then
       		Board[1,0]=$playerSymbol
+		return
     	elif [[ ${Board[1,0]} == "$prevSymbol" && ${Board[1,2]} == "$prevSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[2,0]} == "$prevSymbol" && ${Board[2,1]} == "$prevSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
     	elif [[ ${Board[2,1]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[2,0]} == "6" ]]
     	then
       		Board[2,0]=$playerSymbol
+		return
     	elif [[ ${Board[2,0]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[2,1]} == "7" ]]
     	then
       		Board[2,1]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[0,0]} == "$prevSymbol" && ${Board[1,0]} == "$prevSymbol" && ${Board[2,0]} == "6" ]]
     	then
       		Board[2,0]=$playerSymbol
+		return
     	elif [[ ${Board[1,0]} == "$prevSymbol" && ${Board[2,0]} == "$prevSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
     	elif [[ ${Board[0,0]} == "$prevSymbol" && ${Board[2,0]} == "$prevSymbol" && ${Board[1,0]} == "3" ]]
     	then
       		Board[1,0]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[0,1]} == "$prevSymbol" && ${Board[1,1]} == "$prevSymbol" && ${Board[2,1]} == "7" ]]
     	then
       		Board[2,1]=$playerSymbol
+		return
     	elif [[ ${Board[1,1]} == "$prevSymbol" && ${Board[2,1]} == "$prevSymbol" && ${Board[0,1]} == "1" ]]
     	then
       		Board[0,1]=$playerSymbol
+		return
     	elif [[ ${Board[0,1]} == "$prevSymbol" && ${Board[2,1]} == "$prevSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[0,2]} == "$prevSymbol" && ${Board[1,2]} == "$prevSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
     	elif [[ ${Board[1,2]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[0,2]} == "2" ]]
     	then
       		Board[0,2]=$playerSymbol
+		return
     	elif [[ ${Board[0,2]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[1,2]} == "5" ]]
     	then
       		Board[1,2]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[0,0]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
     	elif [[ ${Board[0,0]} == "$prevSymbol" && ${Board[1,1]} == "$prevSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
     	elif [[ ${Board[1,1]} == "$prevSymbol" && ${Board[2,2]} == "$prevSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
 #----------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[2,0]} == "$prevSymbol" && ${Board[0,2]} == "$prevSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 	elif [[ ${Board[2,0]} == "$prevSymbol" && ${Board[1,1]} == "$prevSymbol" && ${Board[0,2]} == "2" ]]
     	then
       		Board[0,2]=$playerSymbol
+		return
     	elif [[ ${Board[1,1]} == "$prevSymbol" && ${Board[0,2]} == "$prevSymbol" && ${Board[2,0]} == "6" ]]
     	then
       		Board[2,0]=$playerSymbol
-
+		return
 	#Condition For Computer Playing To The Winning
 	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[0,1]} == "$playerSymbol" && ${Board[0,2]} == "2" ]]
     	then
       		Board[0,2]=$playerSymbol
+		return
     	elif [[ ${Board[0,1]} == "$playerSymbol" && ${Board[0,2]} == "$playerSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
     	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[0,2]} == "$playerSymbol" && ${Board[0,1]} == "1" ]]
     	then
       		Board[0,1]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[1,0]} == "$playerSymbol" && ${Board[1,1]} == "$playerSymbol" && ${Board[1,2]} == "5" ]]
     	then
       		Board[1,2]=$playerSymbol
+		return
     	elif [[ ${Board[1,1]} == "$playerSymbol" && ${Board[1,2]} == "$playerSymbol" && ${Board[1,0]} == "3" ]]
     	then
       		Board[1,0]=$playerSymbol
+		return
     	elif [[ ${Board[1,0]} == "$playerSymbol" && ${Board[1,2]} == "$playerSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
     	elif [[ ${Board[2,0]} == "$playerSymbol" && ${Board[2,1]} == "$playerSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
     	elif [[ ${Board[2,1]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[2,0]} == "6" ]]
     	then
      		Board[2,0]=$playerSymbol
+		return
     	elif [[ ${Board[2,0]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[2,1]} == "7" ]]
     	then
       		Board[2,1]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
 	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[1,0]} == "$playerSymbol" && ${Board[2,0]} == "6" ]]
     	then
       		Board[2,0]=$playerSymbol
+		return
 	elif [[ ${Board[1,0]} == "$playerSymbol" && ${Board[2,0]} == "$playerSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
 	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[2,0]} == "$playerSymbol" && ${Board[1,0]} == "3" ]]
     	then
       		Board[1,0]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
 	elif [[ ${Board[0,1]} == "$playerSymbol" && ${Board[1,1]} == "$playerSymbol" && ${Board[2,1]} == "7" ]]
     	then
       		Board[2,1]=$playerSymbol
+		return
 	elif [[ ${Board[1,1]} == "$playerSymbol" && ${Board[2,1]} == "$playerSymbol" && ${Board[0,1]} == "1" ]]
     	then
       		Board[0,1]=$playerSymbol
+		return
 	elif [[ ${Board[0,1]} == "$playerSymbol" && ${Board[2,1]} == "$playerSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
 	elif [[ ${Board[0,2]} == "$playerSymbol" && ${Board[1,2]} == "$playerSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
 	elif [[ ${Board[1,2]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[0,2]} == "2" ]]
 	then
       		Board[0,2]=$playerSymbol
+		return
 	elif [[ ${Board[0,2]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[1,2]} == "5" ]]
     	then
       		Board[1,2]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
 	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 	elif [[ ${Board[0,0]} == "$playerSymbol" && ${Board[1,1]} == "$playerSymbol" && ${Board[2,2]} == "8" ]]
     	then
       		Board[2,2]=$playerSymbol
+		return
 	elif [[ ${Board[1,1]} == "$playerSymbol" && ${Board[2,2]} == "$playerSymbol" && ${Board[0,0]} == "0" ]]
     	then
       		Board[0,0]=$playerSymbol
+		return
 #--------------------------------------------------------------------------------------------------------------
 	elif [[ ${Board[2,0]} == "$playerSymbol" && ${Board[0,2]} == "$playerSymbol" && ${Board[1,1]} == "4" ]]
     	then
       		Board[1,1]=$playerSymbol
+		return
 	elif [[ ${Board[2,0]} == "$playerSymbol" && ${Board[1,1]} == "$playerSymbol" && ${Board[0,2]} == "2" ]]
     	then
       		Board[0,2]=$playerSymbol
+		return
 	elif [[ ${Board[1,1]} == "$playerSymbol" && ${Board[0,2]} == "$playerSymbol" && ${Board[2,0]} == "6" ]]
     	then
       		Board[2,0]=$playerSymbol
-else
+		return
+fi
+#--------------------------------------------------------------------------------------------------------------
+#Condition For Corners Are Block
+for ((i=0; i<row; i++))
+do
+	for ((j=0; j<column; j++))
+	do
+		if [[ ${Board[$i,$j]} == "0" || ${Board[$i,$j]} == "2" || ${Board[$i,$j]} == "6" || ${Board[$i,$j]} == "8" ]]
+		then
+			Board[$i,$j]=$playerSymbol
+			return
+		fi
+	done
+done
+
+#---------------------------------------------------------------------------------------------------------------
+k=0
+if [[ $k == "0" ]]
+then
 	computerPosition=$((RANDOM%9))
 	newRowIndex=$(($computerPosition / 3))
 	newColumnIndex=$(($computerPosition % 3))
 	if [[ ${Board[$newRowIndex,$newColumnIndex]} == "X" || ${Board[$newRowIndex,$newColumnIndex]} == "O" ]]
-	 then
+	then
 		computerPlaying
-	 else
+	else
 		Board[$newRowIndex,$newColumnIndex]=$playerSymbol
 	fi
+	k=1
 fi
 }
 
